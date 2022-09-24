@@ -32,6 +32,9 @@ ControlType=""
  Universityname="University of Cambridge"
  Location="Mysore";
 
+ Fired(){
+    console.log("Successfully Completed the task & Happy clicking");
 
 
-}
+  console.log("Happy Deepavali");
+}}
