@@ -1,12 +1,28 @@
 <p>data-bind works!</p>
+
 {{CourseName}}
 {{CountryName}}
 {{CityName}}
 {{newspapername()}}
 <br>
 <hr>
-<input type="text" [value]="Universityname"/>
-<input type="text" [value]="Location"/>
+<input type="text" [value]="Universityname" />
+<input type="text" [value]="Location" />
 <hr>
-<input [type]="ControlType"/>
+<input [type]="ControlType" />
 <button (click)="Fired()">click</button>
+<hr>
+<button (click)="'evtControlCheck()'">
+    Decide my control name</button>
+
+<!-- <input type="button" value="Click Me" (click)="updatedCustomerName()"> -->
+<input type="text" [value]="Name" (dblclick)="ShowMessage(message)" #message />
+
+<input type="text" [value]="Skill" (dblclick)="evtmessage($event)" />
+
+<hr>
+<input type="text" [ngModel]="Role" (ngModelChange)="evtRole($event)" />
+
+<p>the o/p is <B>{{Role}}</B></p>
+<input type="text" [(ngModel)]=" MicrosoftOwnedby " />
+<p><B>{{MicrosoftOwnedby}}</B></p>
